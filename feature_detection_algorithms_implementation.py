@@ -21,14 +21,12 @@ def orb_feature_detection(filename):
 	kp, des = orb.compute(img, kp)
 
 	# draw only keypoints location,not size and orientation
-	img2 = cv2.merge([img, img, img])
-	cv2.drawKeypoints(img, kp, outImage = img2, color = (255, 0, 0), 
+	img2 = cv2.drawKeypoints(img, kp, None, color = (0, 255, 0), 
 	                    flags = 0)
 
 	#Draw the images
 	plt.imshow(img2)
 	plt.show()
-
 
 def fast_feature_detection(filename):
 	'''
@@ -48,14 +46,12 @@ def fast_feature_detection(filename):
 
 
 	# draw only keypoints location,not size and orientation
-	img2 = cv2.merge([img, img, img])
-	cv2.drawKeypoints(img, kp, outImage = img2, color = (255, 0, 0), 
+	img2 = cv2.drawKeypoints(img, kp, None, color = (0, 255, 0), 
                     flags = 0)
 
 	#Draw the images
 	plt.imshow(img2)
 	plt.show()
-
 
 def sift_feature_detection(filename):
 	'''
@@ -81,11 +77,3 @@ def sift_feature_detection(filename):
 	plt.imshow(img)
 	plt.show()
 
-#Testing of the Function
-fast_feature_detection('training_real/real_00001.jpg')
-	
-#Testing of the Function
-orb_feature_detection('training_real/real_00001.jpg')
-
-#Testing of the Function 
-sift_feature_detection('training_real/real_00001.jpg')
