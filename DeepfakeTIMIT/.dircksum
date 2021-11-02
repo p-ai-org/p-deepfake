@@ -1,0 +1,9 @@
+# CKSUM[cksum] SIZE[bytes] DIRS[count] FILES[count] DATE[iso]
+4030923503 225459933 66 1286 20181217T081626 # DIRCKSUM
+# CKSUK[cksum] SIZE[bytes] FILE[name]
+2577877849 1497682 deepfake_images_1.png
+671264396 967780 deepfake_images_2.png
+432332208 222568 fadg0-fram1-roi93.mov
+41542760 3384201 fadg0-original.mov
+2435953700 3510846 fram1-original.mov
+3885282800 1668 README.txt
