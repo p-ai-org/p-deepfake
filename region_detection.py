@@ -20,13 +20,12 @@ def analyze_regions(regions, algo):
     # ORB
     else if (algo == "ORB"):
       orb = cv2.ORB_create()
-      # find the keypoints and feature descriptors with ORB
-      kp = orb.detect(img,None)
+      kp = orb.detect(region,None)
       keypoints_by_region.append(kp) 
     # FAST 
     else if (algo == "FAST"):
       fast = cv2.FastFeatureDetector_create()
-	    kp = fast.detect(img, None)
+	    kp = fast.detect(region, None)
       keypoints_by_region.append(kp)
     # SURF 
     else if (algo == "SURF"):
