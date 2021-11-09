@@ -4,7 +4,11 @@ import argparse
 import imutils 
 import dlib 
 import cv2
-image = 'training_fake/easy_100_1111.jpg'
+
+
+'''
+CODE SOURCE: https://www.pyimagesearch.com/2017/04/10/detect-eyes-nose-lips-jaw-dlib-opencv-python/
+'''
 
 def extract_facial_regions(image):
 	'''
