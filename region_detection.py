@@ -7,20 +7,25 @@ import matplotlib.pyplot as plt
 import csv
 import os
 
-# input:
-# eyes: image
-# Write to .csv file
 
-
+# iterates through regions of real and fake and adds the data for
+# each in a single row for each corresponding region
 def analyze_images(real, fake):
 
     for key in real:
-        f = open(f + ".csv", "a")
+        f = open(key + ".csv", "a")
         writer = csv.writer(f)
+
+        # extracts image region for real and fake image
         img_real = real[key]
         img_fake = fake[key]
 
         data = []
+        kp_real = None
+        des_real = None
+        kp_fake = None
+        des_fake = None
+
         if (algo == "SIFT"):
             gray = cv2.cvtColor(img_real, cv2.COLOR_BGR2GRAY)
             sift = cv2.xfeatures2d.SIFT_create()
