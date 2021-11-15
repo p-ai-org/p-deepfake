@@ -2,6 +2,7 @@ import numpy as np
 import cv2
 from matplotlib import pyplot as plt
 
+
 def orb_feature_detection(filename):
 	'''
 	Takes the filepath for an image and returns another image of that image, but 
@@ -28,6 +29,7 @@ def orb_feature_detection(filename):
 	plt.imshow(img2)
 	plt.show()
 
+
 def fast_feature_detection(filename):
 	'''
 	fast_feature_detection takes some filepaath for some image named filename
@@ -52,6 +54,7 @@ def fast_feature_detection(filename):
 	#Draw the images
 	plt.imshow(img2)
 	plt.show()
+
 
 def sift_feature_detection(filename):
 	'''
