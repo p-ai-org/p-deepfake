@@ -57,13 +57,13 @@ def extract_facial_regions(image):
 			#append this image to the list of images
 			region_images[str(name)] = roi
 			# show the particular face part
-			cv2.imshow("ROI", roi)
-			cv2.imshow("Image", clone)
-			cv2.waitKey(0)
+			# cv2.imshow("ROI", roi)
+			# cv2.imshow("Image", clone)
+			# cv2.waitKey(0)
 		# visualize all facial landmarks with a transparent overlay
 		output = face_utils.visualize_facial_landmarks(image, shape)
-		cv2.imshow("Image", output)
-	cv2.waitKey(0)
+		# cv2.imshow("Image", output)
+	# cv2.waitKey(0)
 
 	#return the list of regions
 	return region_images
@@ -73,7 +73,6 @@ def extract_facial_regions(image):
 if __name__ == "__main__":
 	image = 'training_fake/easy_100_1111.jpg'
 	regions = extract_facial_regions(image)
-	for image in regions.values():
-		cv2.imshow("Region", image)
-		cv2.waitKey(0)
+	print(regions.keys())
+	print(regions)
 	
