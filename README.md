@@ -12,7 +12,7 @@ Check out our [Notion page](https://flat-chanter-957.notion.site/P-Deepfake-7e47
     │   └── fake                # Deepfake images
     ├── ...                     # Helper files
     ├── main.py                 # Executable program that generates algorithm output data
-    ├── output_data             # Dataset of deepfake and real images
+    ├── output_data             # Algorithm output data
     │   └── full                # Output data for full-face images
     │   └── ...                 # Output data for each facial region        
     └── README.md
