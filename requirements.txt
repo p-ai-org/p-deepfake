@@ -1,4 +1,8 @@
 dlib==19.22.1
 numpy==1.19.4
+skimage== 0.16.2
+pandas
+os
+matplotlib
 opencv-contrib-python==4.5.4.58
 opencv-python==4.5.4.58
