@@ -7,12 +7,13 @@ Check out our [Notion page](https://flat-chanter-957.notion.site/P-Deepfake-7e47
 
 ## Directory tree structure
     ├── exploration                     # Notebooks from exploratory phase
+    ├── data                            # Local datasets for testing
     ├── ...                             # Helper files, including dataset generation
-    ├── feature_point_analysis          # Feature point analysis
+    ├── feature_point_analysis 
     │   └── output_data                 # Algorithm output data
     │   │   └── full                    # Output data for full-face images
     │   │   └── ...                     # Output data for each facial region   
     │   └── ...                         # Other notebooks
-    ├── feature_matching_analysis       # Feature matching analysis
+    ├── feature_matching_analysis
     │   └── ...                         # Other notebooks 
     └── README.md
